@@ -1,0 +1,117 @@
+.promo
+    margin-top: 73px
+    background: linear-gradient(135deg, #3D4251 0%, #272B35 100%)
+    &__title
+        padding-top: 100px
+        text-align: center
+        font-weight: 300
+        font-size: 48px
+        line-height: 64px
+        text-align: center
+        letter-spacing: -0.5px
+        color: #FFFFFF
+    &__wrapper
+        display: flex
+        justify-content: center
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        padding: 48px 87px 40px 88px
+        width: 380px
+        height: 340px
+        background: #FFFFFF
+        border: 1px solid #EBECED
+        border-radius: 6px
+        filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.501961))
+        margin: 60px 10px 0 10px
+        &_active
+            padding-top: 59px
+            padding-bottom: 58px
+            margin-top: 40px
+            height: 380px
+            border: 4px solid $main-color
+            border-radius: 4px
+        &_title
+            font-weight: 700
+            font-size: 14px
+            line-height: 18px
+            text-align: center
+            letter-spacing: 1px
+            text-transform: uppercase
+    &__price
+        position: relative
+        font-weight: 300
+        font-size: 24px
+        line-height: 32px
+        color: $blackN22
+        span
+            font-size: 56px
+            line-height: 66px
+            letter-spacing: -1.5px
+            padding-left: 20px
+        &::before
+            content: '$'
+            position: absolute
+            top: 12px
+    &__descr
+        font-weight: 400
+        font-size: 14px
+        line-height: 22px
+        text-align: center
+        color: $blackN32
+        margin-bottom: 15px
+        span
+            text-decoration-line: line-through
+            color: #F24458
+            margin-right: 6px 
+    &__save
+        font-weight: 700
+        font-size: 14px
+        line-height: 22px
+        color: $blackN32
+        text-decoration: none
+        margin-top: 4px
+        &:hover
+            color: $blackN32
+    &__divider
+        &_green
+            width: 24px
+            height: 2px
+            background: $main-color
+            margin: 14px auto
+        &_gray
+            width: 200px
+            height: 1px
+            background: #EBECED
+            margin: 10px auto 10px auto
+    &__pay
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 31px
+        &_title
+            font-weight: 300
+            font-size: 18px
+            line-height: 28px
+            color: #FFFFFF
+            margin: 15px
+        &_wrapper 
+            a
+                padding: 0 16px
+    &__questions
+        margin-top: 8px
+        padding-bottom: 57px
+        text-align: center
+        font-weight: 500
+        font-size: 14px
+        line-height: 18px
+        letter-spacing: 0.8px
+        text-transform: uppercase 
+        a
+            text-decoration: none
+            color: $main-color
+            margin: 0 20px
+            img
+                margin-left: 12px 

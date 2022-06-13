@@ -1,0 +1,119 @@
+.posts
+    padding: 40px 200px 0 200px
+    &__wrapper
+        display: grid
+        grid-template-columns: 1.6fr 0.2fr 1.2fr 
+    &__title
+        font-weight: 300
+        font-size: 32px
+        line-height: 44px
+        color: $blackN22
+        margin-bottom: 40px
+    &__item
+        display: flex
+        justify-content: flex-start
+        margin-right: 20px
+        &_wrapper
+            padding-left: 40px
+        &_text
+            font-weight: 300
+            font-size: 24px
+            line-height: 34px
+            color: $blackN22
+            margin-bottom: 7px
+        &_descr
+            font-weight: 400
+            font-size: 14px
+            line-height: 22px
+            color: $blackN32
+            margin-bottom: 8px
+            span
+                color: #889099
+        &_tags
+            font-weight: 400
+            font-size: 12px
+            line-height: 16px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $main-color
+            text-decoration: none
+            margin-bottom: 15px
+            &-big
+                font-weight: 500
+                font-size: 14px
+                line-height: 18px
+                letter-spacing: 0.8px
+    &__divider
+        width: 100%
+        height: 1px
+        background: #EBECED
+        margin: 30px 0
+        &_short
+            height: 1px
+            background: #EBECED
+            width: 340px
+            margin: 32px 0
+        &_long
+            display: inline-block
+            width: 1px
+            height: 1650px
+            background: #EBECED
+            margin: 0 60px 0 20px
+            grid-column: 2/3
+
+    &__side-column
+        grid-column: 3/4
+        grid-row-start: 1
+        &_item
+            margin-top: 32px
+            width: 340px
+        &_title
+            font-weight: 300
+            font-size: 24px
+            line-height: 34px
+            color: $blackN22
+            padding-bottom: 4px
+            img
+                padding-left: 10px
+                padding-right: 20px
+        &_list
+            font-weight: 400
+            font-size: 14px
+            line-height: 22px
+            color: $blackN32
+            padding: 0
+            li
+                position: relative
+                list-style-type: none
+                padding-top: 16px
+                padding-left: 15px
+                &::before
+                    content: ''
+                    position: absolute
+                    height: 5px
+                    width: 5px
+                    border-radius: 100%
+                    background-color: $main-color
+                    top: 24px
+                    left: 5px
+    &__search-panel
+        position: relative
+        img
+            position: absolute
+            top: 20px
+            left: 20px
+        input
+            width: 340px
+            height: 59px
+            background: #FFFFFF
+            border: 1px solid #D7D8D9
+            border-radius: 4px
+            padding: 16px 10px 15px 58px
+            outline: none
+    &__tag-cloud
+        margin-top: 51px 
+        font-weight: 300
+        font-size: 24px
+        line-height: 34px
+        img
+            margin-top: 15px
